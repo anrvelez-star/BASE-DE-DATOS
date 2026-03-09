@@ -1,0 +1,1 @@
+-- SQL query to aggregate sales data by city from Madecentro data\n\nSELECT city, SUM(sales) AS total_sales\nFROM ventas\nWHERE city IN ('Cali', 'Palmira', 'Jamundi', 'Yumbo')\nGROUP BY city;
